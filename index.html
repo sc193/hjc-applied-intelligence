@@ -65,7 +65,7 @@
     /* Layout */
 
     .page {
-      max-width: 1200px;
+      max-width: 1120px;
       margin: 0 auto;
       padding: 24px 18px 96px;
     }
@@ -76,20 +76,61 @@
       }
     }
 
+    section {
+      padding-top: 56px;
+    }
+
+    section:first-of-type {
+      padding-top: 36px;
+    }
+
+    .section-header {
+      margin-bottom: 20px;
+    }
+
+    .section-kicker {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .section-title {
+      font-family: "Poppins", system-ui, sans-serif;
+      font-weight: 500;
+      font-size: 24px;
+      color: var(--accent-primary);
+      margin-bottom: 4px;
+    }
+
+    @media (min-width: 768px) {
+      .section-title {
+        font-size: 28px;
+      }
+    }
+
+    .section-subtext {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-top: 4px;
+      max-width: 520px;
+    }
+
     /* Header / Nav with dropdowns */
 
     .header {
       position: sticky;
       top: 0;
       z-index: 40;
-      background: rgba(235, 233, 235, 0.9);
+      background: rgba(235, 233, 235, 0.94);
       backdrop-filter: blur(16px);
       border-bottom: 1px solid rgba(0, 0, 0, 0.04);
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
     }
 
     .header-inner {
-      max-width: 1200px;
+      max-width: 1120px;
       margin: 0 auto;
       padding: 10px 18px;
       display: flex;
@@ -285,7 +326,7 @@
 
     .btn-primary:hover {
       transform: translateY(-1px);
-      box-shadow: 0 24px 60px rgba(9, 9, 30, 0.3);
+      box-shadow: 0 24px 60px rgba(9, 9, 30, 0.28);
     }
 
     .btn-outline {
@@ -346,7 +387,7 @@
       font-size: 11px;
       text-transform: uppercase;
       letter-spacing: 0.14em;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
     }
 
     .tag-dot {
@@ -362,45 +403,45 @@
       font-size: 34px;
       line-height: 1.2;
       color: var(--accent-primary);
-      margin-bottom: 14px;
+      margin-bottom: 10px;
     }
 
     @media (min-width: 768px) {
       .hero-title {
-        font-size: 44px;
+        font-size: 42px;
       }
     }
 
     .hero-sub {
       font-size: 15px;
       color: var(--text-body);
-      max-width: 620px;
-      margin-bottom: 22px;
+      max-width: 540px;
+      margin-bottom: 16px;
     }
 
     .hero-ctas {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 16px;
+      gap: 10px;
+      margin-bottom: 12px;
     }
 
     .hero-note {
       font-size: 12px;
       color: var(--text-muted);
-      max-width: 420px;
+      max-width: 380px;
     }
 
     .hero-right {
       position: relative;
       display: grid;
-      gap: 18px;
+      gap: 16px;
     }
 
     .hero-card {
       position: relative;
       border-radius: 20px;
-      padding: 18px 18px 16px;
+      padding: 16px 16px 14px;
       background:
         radial-gradient(circle at 12% 8%, rgba(37, 56, 123, 0.12), transparent 60%),
         radial-gradient(circle at 88% 82%, rgba(221, 168, 82, 0.16), transparent 70%),
@@ -408,14 +449,14 @@
       border: 1px solid var(--border-subtle);
       box-shadow: var(--shadow-soft);
       overflow: hidden;
-      min-height: 220px;
+      min-height: 200px;
     }
 
     .hero-card-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
     }
 
     .hero-card-title {
@@ -427,7 +468,7 @@
 
     .hero-pill {
       font-size: 11px;
-      padding: 5px 10px;
+      padding: 4px 9px;
       border-radius: 999px;
       background: #f5f3f7;
       border: 1px solid rgba(18, 23, 51, 0.16);
@@ -437,15 +478,15 @@
     .hero-metrics {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 12px;
-      margin-bottom: 14px;
+      gap: 10px;
+      margin-bottom: 12px;
     }
 
     .metric {
       background: #f7f5f9;
       border-radius: 14px;
       border: 1px solid rgba(18, 23, 51, 0.08);
-      padding: 10px 10px 8px;
+      padding: 8px 8px 6px;
     }
 
     .metric-label {
@@ -467,10 +508,10 @@
     }
 
     .hero-bottom {
-      margin-top: 6px;
+      margin-top: 4px;
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 6px;
       font-size: 12px;
     }
 
@@ -479,7 +520,7 @@
       align-items: center;
       gap: 8px;
       font-size: 11px;
-      padding: 6px 10px;
+      padding: 5px 9px;
       border-radius: 999px;
       background: #f5f3f7;
       border: 1px solid rgba(18, 23, 51, 0.12);
@@ -509,11 +550,11 @@
         radial-gradient(circle at 18% 10%, rgba(37, 56, 123, 0.18), transparent 60%),
         radial-gradient(circle at 80% 90%, rgba(221, 168, 82, 0.22), transparent 60%),
         #f7f5f9;
-      min-height: 170px;
+      min-height: 140px;
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
-      padding: 16px;
+      padding: 14px;
       font-size: 12px;
       color: var(--text-muted);
     }
@@ -531,63 +572,22 @@
     }
 
     .hero-image-graphic {
-      width: 76px;
-      height: 76px;
+      width: 72px;
+      height: 72px;
       border-radius: 999px;
       border: 1px solid rgba(18, 23, 51, 0.16);
       background:
         radial-gradient(circle at 30% 20%, var(--accent-primary-soft), transparent 55%),
         radial-gradient(circle at 70% 80%, var(--accent-gold), transparent 55%),
         #ffffff;
-      box-shadow: 0 0 30px rgba(37, 56, 123, 0.35);
+      box-shadow: 0 0 26px rgba(37, 56, 123, 0.32);
     }
 
-    /* Sections */
-
-    section {
-      padding-top: 56px;
-    }
-
-    section:first-of-type {
-      padding-top: 36px;
-    }
-
-    .section-header {
-      margin-bottom: 24px;
-    }
-
-    .section-kicker {
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: var(--text-muted);
-      margin-bottom: 6px;
-    }
-
-    .section-title {
-      font-family: "Poppins", system-ui, sans-serif;
-      font-weight: 500;
-      font-size: 24px;
-      color: var(--accent-primary);
-      margin-bottom: 4px;
-    }
-
-    @media (min-width: 768px) {
-      .section-title {
-        font-size: 28px;
-      }
-    }
-
-    .section-subtext {
-      font-size: 14px;
-      color: var(--text-muted);
-      margin-top: 4px;
-      max-width: 640px;
-    }
+    /* Grids / cards */
 
     .cards-grid {
       display: grid;
-      gap: 18px;
+      gap: 16px;
     }
 
     @media (min-width: 820px) {
@@ -611,7 +611,7 @@
       border-radius: var(--radius-lg);
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
-      padding: 16px 16px 18px;
+      padding: 14px 14px 16px;
       box-shadow: var(--shadow-soft);
       transition: transform var(--transition-fast), box-shadow var(--transition-fast),
         border-color var(--transition-fast), background var(--transition-fast);
@@ -624,8 +624,8 @@
     }
 
     .card-icon {
-      width: 32px;
-      height: 32px;
+      width: 30px;
+      height: 30px;
       border-radius: 12px;
       background:
         radial-gradient(circle at 30% 20%, var(--accent-primary-soft), transparent 60%),
@@ -637,13 +637,13 @@
     .card-title {
       font-size: 16px;
       color: var(--accent-primary);
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
 
     .card-text {
       font-size: 13px;
       color: var(--text-body);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .card-list {
@@ -653,7 +653,7 @@
     }
 
     .card-list li {
-      margin-bottom: 4px;
+      margin-bottom: 3px;
     }
 
     .card-list li::before {
@@ -667,14 +667,14 @@
       border-radius: var(--radius-lg);
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
-      padding: 18px 18px 20px;
+      padding: 16px 16px 18px;
       box-shadow: var(--shadow-soft);
     }
 
     .about-main p {
       font-size: 14px;
       color: var(--text-body);
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .about-main p:last-child {
@@ -685,12 +685,12 @@
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      margin-top: 12px;
+      margin-top: 10px;
     }
 
     .pill {
       font-size: 11px;
-      padding: 6px 11px;
+      padding: 5px 10px;
       border-radius: 999px;
       background: #f5f3f7;
       border: 1px solid rgba(18, 23, 51, 0.16);
@@ -706,7 +706,7 @@
       border-radius: var(--radius-lg);
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
-      padding: 14px 16px 15px;
+      padding: 12px 14px 13px;
       font-size: 13px;
       color: var(--text-body);
       box-shadow: var(--shadow-soft);
@@ -717,14 +717,14 @@
       text-transform: uppercase;
       letter-spacing: 0.16em;
       color: var(--text-muted);
-      margin-bottom: 5px;
+      margin-bottom: 4px;
     }
 
     /* Use Cases */
 
     .usecases-grid {
       display: grid;
-      gap: 18px;
+      gap: 16px;
     }
 
     @media (min-width: 880px) {
@@ -737,7 +737,7 @@
       border-radius: var(--radius-lg);
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
-      padding: 16px 16px 18px;
+      padding: 14px 14px 16px;
       font-size: 13px;
       color: var(--text-body);
       box-shadow: var(--shadow-soft);
@@ -746,14 +746,14 @@
     .usecase-title {
       font-size: 15px;
       color: var(--accent-primary);
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
 
     /* Pricing */
 
     .pricing-grid {
       display: grid;
-      gap: 18px;
+      gap: 16px;
     }
 
     @media (min-width: 960px) {
@@ -766,7 +766,7 @@
       border-radius: var(--radius-lg);
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
-      padding: 18px 18px 20px;
+      padding: 16px 16px 18px;
       box-shadow: var(--shadow-soft);
       display: flex;
       flex-direction: column;
@@ -797,11 +797,11 @@
       background: #f5f3f7;
       border: 1px solid rgba(221, 168, 82, 0.7);
       color: var(--accent-primary-soft);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .pricing-name {
-      font-size: 17px;
+      font-size: 16px;
       color: var(--accent-primary);
       margin-bottom: 4px;
     }
@@ -810,32 +810,32 @@
       font-size: 22px;
       color: var(--accent-primary);
       font-weight: 500;
-      margin-bottom: 4px;
+      margin-bottom: 2px;
     }
 
     .pricing-period {
       font-size: 12px;
       color: var(--text-muted);
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .pricing-features {
       list-style: none;
       font-size: 13px;
       color: var(--text-body);
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
 
     .pricing-features li {
-      margin-bottom: 5px;
+      margin-bottom: 4px;
       position: relative;
-      padding-left: 18px;
+      padding-left: 16px;
     }
 
     .pricing-features li::before {
       content: "";
-      width: 8px;
-      height: 8px;
+      width: 7px;
+      height: 7px;
       border-radius: 999px;
       background: linear-gradient(135deg, var(--accent-primary-soft), var(--accent-gold));
       position: absolute;
@@ -853,11 +853,11 @@
       width: 100%;
     }
 
-    /* Testimonials / Results */
+    /* Testimonials */
 
     .testimonial-grid {
       display: grid;
-      gap: 18px;
+      gap: 16px;
     }
 
     @media (min-width: 820px) {
@@ -870,14 +870,14 @@
       border-radius: var(--radius-lg);
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
-      padding: 16px 16px 18px;
+      padding: 14px 14px 16px;
       font-size: 13px;
       color: var(--text-body);
       box-shadow: var(--shadow-soft);
     }
 
     .testimonial-quote {
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .testimonial-author {
@@ -885,11 +885,57 @@
       color: var(--text-muted);
     }
 
+    /* How it works */
+
+    .how-grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    @media (min-width: 880px) {
+      .how-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    .how-step {
+      border-radius: var(--radius-lg);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      padding: 14px 14px 16px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .how-number {
+      width: 22px;
+      height: 22px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 500;
+      color: #ffffff;
+      background: linear-gradient(135deg, var(--accent-primary-soft), var(--accent-gold));
+      margin-bottom: 6px;
+    }
+
+    .how-title {
+      font-size: 15px;
+      color: var(--accent-primary);
+      margin-bottom: 4px;
+    }
+
+    .how-text {
+      font-size: 13px;
+      color: var(--text-body);
+    }
+
     /* Contact */
 
     .contact-grid {
       display: grid;
-      gap: 22px;
+      gap: 20px;
     }
 
     @media (min-width: 950px) {
@@ -902,19 +948,19 @@
       border-radius: var(--radius-lg);
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
-      padding: 18px 18px 20px;
+      padding: 16px 16px 18px;
       box-shadow: var(--shadow-soft);
     }
 
     .contact-form {
       display: grid;
-      gap: 12px;
+      gap: 10px;
       font-size: 13px;
     }
 
     .form-field label {
       display: block;
-      margin-bottom: 4px;
+      margin-bottom: 3px;
       color: var(--text-muted);
       font-size: 12px;
     }
@@ -927,7 +973,7 @@
       border: 1px solid rgba(18, 23, 51, 0.18);
       background: #f9f7fb;
       color: var(--text-body);
-      padding: 9px 11px;
+      padding: 8px 10px;
       font-size: 13px;
       outline: none;
       transition: border-color var(--transition-fast), box-shadow var(--transition-fast),
@@ -938,18 +984,18 @@
     .form-textarea:focus,
     .form-select:focus {
       border-color: var(--accent-primary-soft);
-      box-shadow: 0 0 0 1px rgba(37, 56, 123, 0.3);
+      box-shadow: 0 0 0 1px rgba(37, 56, 123, 0.25);
       background: #ffffff;
     }
 
     .form-textarea {
       resize: vertical;
-      min-height: 110px;
+      min-height: 90px;
     }
 
     .contact-highlight {
-      margin-top: 14px;
-      padding: 10px 12px;
+      margin-top: 10px;
+      padding: 9px 10px;
       border-radius: 14px;
       background: #f5f3f7;
       border: 1px solid rgba(18, 23, 51, 0.12);
@@ -965,25 +1011,25 @@
         radial-gradient(circle at 10% 0%, rgba(37, 56, 123, 0.22), transparent 60%),
         radial-gradient(circle at 85% 100%, rgba(221, 168, 82, 0.22), transparent 60%),
         #f7f5f9;
-      min-height: 220px;
+      min-height: 200px;
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
-      padding: 18px;
+      padding: 16px;
       font-size: 12px;
       color: var(--text-muted);
       box-shadow: var(--shadow-soft);
     }
 
     .contact-image-text {
-      max-width: 62%;
+      max-width: 60%;
     }
 
     /* Footer */
 
     .footer {
       border-top: 1px solid rgba(0, 0, 0, 0.06);
-      padding: 18px;
+      padding: 16px;
       margin-top: auto;
       font-size: 12px;
       color: var(--text-muted);
@@ -991,11 +1037,11 @@
     }
 
     .footer-inner {
-      max-width: 1200px;
+      max-width: 1120px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 8px;
     }
 
     @media (min-width: 768px) {
@@ -1021,9 +1067,10 @@
       color: var(--accent-primary);
     }
 
-    /* Simple success / error messages for form */
+    /* Form status messages */
+
     .form-message {
-      margin-top: 8px;
+      margin-top: 6px;
       font-size: 12px;
     }
 
@@ -1060,18 +1107,18 @@
             Solutions <span class="chevron">▾</span>
           </div>
           <div class="dropdown">
-            <div class="dropdown-group-title">By focus</div>
+            <div class="dropdown-group-title">What we build</div>
+            <a class="dropdown-link" href="#how-it-works">
+              How it works
+              <span>See the 3-step rollout process.</span>
+            </a>
             <a class="dropdown-link" href="#services">
-              Automation Blueprints
-              <span>See how we map and design flows.</span>
+              Core services
+              <span>Blueprints, workflows, and dashboards.</span>
             </a>
             <a class="dropdown-link" href="#use-cases">
-              Operations & Admin
-              <span>Examples of back-office automation.</span>
-            </a>
-            <a class="dropdown-link" href="#use-cases">
-              Customer Flows
-              <span>From intake to follow-up with fewer clicks.</span>
+              Use cases
+              <span>Where automation helps most.</span>
             </a>
           </div>
         </div>
@@ -1084,7 +1131,7 @@
             <div class="dropdown-group-title">About HJC</div>
             <a class="dropdown-link" href="#about">
               Approach
-              <span>How HJC thinks about automation and AI.</span>
+              <span>How HJC thinks about automation.</span>
             </a>
             <a class="dropdown-link" href="#results">
               Results
@@ -1107,8 +1154,8 @@
       </nav>
 
       <div class="nav-cta">
-        <button class="btn btn-outline" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
-          Explore services
+        <button class="btn btn-outline" onclick="document.getElementById('how-it-works').scrollIntoView({behavior:'smooth'})">
+          See how it works
         </button>
         <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
           Talk to HJC
@@ -1127,26 +1174,26 @@
       <div>
         <div class="tag">
           <span class="tag-dot"></span>
-          <span>Automation & applied intelligence for everyday work</span>
+          <span>Automation for the work you do every day</span>
         </div>
         <h1 class="hero-title">
-          Systems that turn busywork into background tasks.
+          Turn repeatable work into quiet, reliable systems.
         </h1>
         <p class="hero-sub">
-          HJC Applied Intelligence Networks designs automation and AI-driven workflows that
-          quietly handle repetitive work, so teams can focus on the real problems—not the copy-paste.
+          HJC Applied Intelligence Networks designs small, practical automations that handle
+          the busywork—so you can stay focused on the work that actually needs you.
         </p>
         <div class="hero-ctas">
           <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
             Get an automation review
           </button>
-          <button class="btn btn-outline" onclick="document.getElementById('use-cases').scrollIntoView({behavior:'smooth'})">
-            See real use cases
+          <button class="btn btn-outline" onclick="document.getElementById('how-it-works').scrollIntoView({behavior:'smooth'})">
+            See how it works
           </button>
         </div>
         <p class="hero-note">
-          Built for small teams and operators who want clearer processes, fewer manual clicks,
-          and automation that actually makes sense.
+          No big platform change. No jargon. Just a few well-chosen flows that quietly reduce
+          clicks and copy-paste.
         </p>
       </div>
 
@@ -1154,59 +1201,98 @@
         <div class="hero-card">
           <div class="hero-card-header">
             <div>
-              <div class="hero-card-title">Automation snapshot</div>
+              <div class="hero-card-title">Example automation snapshot</div>
               <div style="font-size:12px;color:var(--text-muted);">
-                Example 7-day view
+                One week, one workflow
               </div>
             </div>
-            <div class="hero-pill">HJC applied intelligence</div>
+            <div class="hero-pill">HJC view</div>
           </div>
 
           <div class="hero-metrics">
             <div class="metric">
               <div class="metric-label">Tasks automated</div>
-              <div class="metric-value">126</div>
-              <div class="metric-sub">Recurring actions</div>
+              <div class="metric-value">120+</div>
+              <div class="metric-sub">Recurring steps</div>
             </div>
             <div class="metric">
-              <div class="metric-label">Hours reclaimed</div>
-              <div class="metric-value">19.3</div>
-              <div class="metric-sub">Across the team</div>
+              <div class="metric-label">Hours saved</div>
+              <div class="metric-value">15.5</div>
+              <div class="metric-sub">In one week</div>
             </div>
             <div class="metric">
-              <div class="metric-label">Error reduction</div>
-              <div class="metric-value">41%</div>
-              <div class="metric-sub">Manual steps removed</div>
+              <div class="metric-label">Manual errors</div>
+              <div class="metric-value">–35%</div>
+              <div class="metric-sub">After rollout</div>
             </div>
           </div>
 
           <div class="hero-bottom">
             <div class="hero-badge">
               <span class="tag-dot"></span>
-              <span>Automations run quietly · you stay in control</span>
+              <span>Systems do the repeating · you stay in control</span>
             </div>
             <div class="hero-progress-track">
               <div class="hero-progress-fill"></div>
             </div>
             <div style="display:flex;justify-content:space-between;color:var(--text-muted);font-size:11px;">
-              <span>Workload handled by systems</span>
-              <span>68%</span>
+              <span>Workflow handled by automation</span>
+              <span>~68%</span>
             </div>
           </div>
         </div>
 
         <div class="hero-image">
           <div class="hero-image-text">
-            <div class="hero-image-tag">Example view</div>
+            <div class="hero-image-tag">Flow overview</div>
             <div style="font-size:13px;color:var(--accent-primary);margin-bottom:4px;">
-              A simple “flow map” of how data moves through one onboarding process.
+              A simple “map” of how one onboarding flow moves from form → inbox → tasks.
             </div>
             <div>
-              Each node represents where something happens: email, forms, internal notes, or a
-              manual step that stays human by design.
+              Each step is visible, so it’s easy to see what’s automated and what stays human.
             </div>
           </div>
           <div class="hero-image-graphic" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how-it-works">
+      <div class="section-header">
+        <div class="section-kicker">How it works</div>
+        <h2 class="section-title">Three steps from “too many clicks” to smoother days.</h2>
+        <p class="section-subtext">
+          The goal is a small set of flows that are easy to understand and simple to maintain.
+        </p>
+      </div>
+
+      <div class="how-grid">
+        <div class="how-step">
+          <div class="how-number">1</div>
+          <div class="how-title">Discover your real workflows</div>
+          <p class="how-text">
+            You describe how work actually moves today—tools you use, where things pile up,
+            and tasks you repeat every week.
+          </p>
+        </div>
+
+        <div class="how-step">
+          <div class="how-number">2</div>
+          <div class="how-title">Design a focused network</div>
+          <p class="how-text">
+            HJC maps 1–2 critical flows and chooses a few clear points to automate, without
+            changing everything at once.
+          </p>
+        </div>
+
+        <div class="how-step">
+          <div class="how-number">3</div>
+          <div class="how-title">Launch, test, and tune</div>
+          <p class="how-text">
+            The new flow goes live with guardrails. You try it, then we adjust until it feels
+            reliable and genuinely helpful.
+          </p>
         </div>
       </div>
     </section>
@@ -1215,11 +1301,9 @@
     <section id="services">
       <div class="section-header">
         <div class="section-kicker">Core services</div>
-        <h2 class="section-title">Applied intelligence networks for everyday work.</h2>
+        <h2 class="section-title">A small set of building blocks for automation.</h2>
         <p class="section-subtext">
-          Every engagement at HJC starts with one goal: remove friction. We design small,
-          reliable systems that connect the tools you already use with the automations you’ve
-          been thinking about.
+          Everything is built from a few simple pieces you can understand at a glance.
         </p>
       </div>
 
@@ -1228,13 +1312,13 @@
           <div class="card-icon"></div>
           <h3 class="card-title">Automation blueprints</h3>
           <p class="card-text">
-            A clear map of how information moves through your business—and where automation
-            can safely handle the heavy lifting.
+            Clear diagrams that show where information starts, where it goes, and what can be
+            automated safely.
           </p>
           <ul class="card-list">
-            <li>Process mapping for 1–3 critical workflows</li>
-            <li>Identify high-leverage automation points</li>
-            <li>Prioritized roadmap of what to build first</li>
+            <li>Map 1–3 key workflows</li>
+            <li>Spot high-leverage steps</li>
+            <li>Simple, shareable visuals</li>
           </ul>
         </article>
 
@@ -1242,13 +1326,13 @@
           <div class="card-icon"></div>
           <h3 class="card-title">AI-assisted workflows</h3>
           <p class="card-text">
-            Practical AI inside the tools you already use, from drafting and summarizing to
-            routing information to the right place.
+            Lightweight AI inside the tools you already use—drafts, summaries, and simple
+            routing.
           </p>
           <ul class="card-list">
-            <li>Email and message summaries</li>
-            <li>Draft responses and follow-ups</li>
-            <li>Internal notes and task creation</li>
+            <li>Inbox and thread summaries</li>
+            <li>Draft replies and notes</li>
+            <li>Tasks created automatically</li>
           </ul>
         </article>
 
@@ -1256,13 +1340,13 @@
           <div class="card-icon"></div>
           <h3 class="card-title">Operational dashboards</h3>
           <p class="card-text">
-            Simple views that show what’s running, what’s stuck, and where your time is
-            actually going.
+            A single view that shows what’s running, what’s stuck, and what needs a human
+            decision.
           </p>
           <ul class="card-list">
-            <li>Overview of live automations</li>
-            <li>Volume and time-saved estimates</li>
-            <li>Signals for what to improve next</li>
+            <li>Flow status at a glance</li>
+            <li>Rough time-saved estimates</li>
+            <li>Ideas for the next upgrade</li>
           </ul>
         </article>
       </div>
@@ -1274,33 +1358,30 @@
         <div class="section-kicker">About HJC</div>
         <h2 class="section-title">Automation that feels calm, not chaotic.</h2>
         <p class="section-subtext">
-          HJC Applied Intelligence Networks exists for people who know their work deeply—but
-          don’t want to spend their days repeating the same clicks and copy-paste moves.
+          HJC exists for teams that want fewer manual steps, not more dashboards to babysit.
         </p>
       </div>
 
       <div class="wide-grid">
         <div class="about-main">
           <p>
-            Modern tools promise more productivity, but most teams end up with scattered
-            dashboards, too many notifications, and processes that only live in someone’s
-            head. HJC helps turn that mess into a set of simple, dependable flows.
+            Most tools promise “more productivity” but quietly add more tabs, more alerts, and
+            more work to keep the system running.
           </p>
           <p>
-            We start with how work actually happens today: who talks to who, which tools are
-            already in place, and where things consistently slow down. Then we design a small
-            network of automations and AI helpers that quietly keeps everything moving.
+            HJC starts from the opposite angle: what can we remove? Which steps can a system
+            handle so your day feels lighter, not busier?
           </p>
           <p>
-            The result isn’t “more tech for its own sake”—it’s fewer manual updates, fewer
-            dropped balls, and a workday that feels noticeably lighter.
+            The outcome is a small network of automations that you can explain in plain
+            language and adjust as your work changes.
           </p>
 
           <div class="pill-row">
-            <div class="pill">Tool-agnostic solutions</div>
-            <div class="pill">Start small, then scale</div>
-            <div class="pill">Always explainable</div>
-            <div class="pill">Humans stay in charge</div>
+            <div class="pill">Small, focused changes</div>
+            <div class="pill">Tool-agnostic</div>
+            <div class="pill">Explainable flows</div>
+            <div class="pill">Human-first decisions</div>
           </div>
         </div>
 
@@ -1308,19 +1389,15 @@
           <div class="about-card">
             <div class="about-label">How HJC works with you</div>
             <p>
-              We listen first, then propose one or two high-impact automations instead of a
-              huge overhaul. Once those are stable and useful, we extend the network.
-            </p>
-            <p>
-              You get documentation, clear language, and the ability to adjust or turn off any
-              part as your workflows evolve.
+              Start with one workflow. Prove the value. Then expand slowly based on what you
+              actually use, not what looks impressive on paper.
             </p>
           </div>
           <div class="about-card">
-            <div class="about-label">A living system</div>
+            <div class="about-label">This page as a living doc</div>
             <p>
-              As HJC grows, you can keep this section updated with new angles, case studies,
-              and the way your philosophy evolves around automation.
+              As HJC grows, you can swap in real examples, screenshots, and results—turning
+              the site into a running log of what’s working.
             </p>
           </div>
         </div>
@@ -1331,10 +1408,9 @@
     <section id="use-cases">
       <div class="section-header">
         <div class="section-kicker">Use cases</div>
-        <h2 class="section-title">Where applied intelligence makes the biggest difference.</h2>
+        <h2 class="section-title">Where automation tends to pay off first.</h2>
         <p class="section-subtext">
-          These are example scenarios you can customize over time. As HJC ships more projects,
-          swap in real stories, screenshots, and metrics.
+          The exact flows will change by business, but the patterns are often the same.
         </p>
       </div>
 
@@ -1342,24 +1418,24 @@
         <article class="usecase-card">
           <div class="usecase-title">Operations & admin</div>
           <p>
-            Intake forms route to the right person, tasks are created automatically, and daily
-            summaries show what actually moved forward—without you digging through email.
+            New requests and forms route to the right person. Tasks appear on the right list
+            without anyone copying and pasting.
           </p>
         </article>
 
         <article class="usecase-card">
-          <div class="usecase-title">Customer support flows</div>
+          <div class="usecase-title">Customer updates</div>
           <p>
-            Common questions are answered with clean, consistent language. Edge-cases are
-            flagged for a human, with context automatically attached.
+            Common questions get consistent answers. Edge-cases are flagged for a human with
+            key context already attached.
           </p>
         </article>
 
         <article class="usecase-card">
-          <div class="usecase-title">Founder & leadership time</div>
+          <div class="usecase-title">Founder & team time</div>
           <p>
-            Updates are summarized into one view, long threads become short briefs, and key
-            decisions are tracked instead of getting lost in chats.
+            Threads and updates are summarized into one short brief so you can decide faster
+            and move on.
           </p>
         </article>
       </div>
@@ -1369,11 +1445,10 @@
     <section id="pricing">
       <div class="section-header">
         <div class="section-kicker">Simple, expandable pricing</div>
-        <h2 class="section-title">Start with a focused build, expand as the network grows.</h2>
+        <h2 class="section-title">Start small. Scale only when it’s clearly working.</h2>
         <p class="section-subtext">
-          Early HJC projects are intentionally compact. It’s better to get one automation right
-          than promise a dozen you never use. You can adjust these numbers anytime as the
-          business evolves.
+          The first goal is one solid win. After that, you decide how much to extend the
+          network.
         </p>
       </div>
 
@@ -1385,9 +1460,9 @@
             <div class="pricing-price">$120</div>
             <div class="pricing-period">One-time</div>
             <ul class="pricing-features">
-              <li>Deep-dive call or async review</li>
-              <li>Map 1‑2 critical workflows</li>
-              <li>Written blueprint of automation options</li>
+              <li>Short call or async walkthrough</li>
+              <li>Map 1–2 key workflows</li>
+              <li>Written outline of automation options</li>
             </ul>
           </div>
           <div class="pricing-footer">
@@ -1400,15 +1475,15 @@
         <!-- Featured Bundle -->
         <article class="pricing-card featured">
           <div>
-            <div class="pricing-badge">Recommended starting point</div>
+            <div class="pricing-badge">Recommended</div>
             <div class="pricing-name">Automation launch bundle</div>
             <div class="pricing-price">$250</div>
             <div class="pricing-period">One-time project</div>
             <ul class="pricing-features">
-              <li>Automation blueprint for one workflow</li>
-              <li>Build & test 1‑3 key automations</li>
-              <li>Light AI assistance inside your tools</li>
-              <li>Two weeks of support and fine-tuning</li>
+              <li>Blueprint for one workflow</li>
+              <li>Build & test 1–3 automations</li>
+              <li>Light AI assistance where it helps most</li>
+              <li>Two weeks of tuning and tweaks</li>
             </ul>
           </div>
           <div class="pricing-footer">
@@ -1425,9 +1500,9 @@
             <div class="pricing-price">From $80</div>
             <div class="pricing-period">Per month</div>
             <ul class="pricing-features">
-              <li>Monitor key automations and flows</li>
-              <li>Apply improvements as tools evolve</li>
-              <li>Quarterly review of new opportunities</li>
+              <li>Keep key flows healthy</li>
+              <li>Small improvements over time</li>
+              <li>Quarterly ideas for what’s next</li>
             </ul>
           </div>
           <div class="pricing-footer">
@@ -1443,29 +1518,27 @@
     <section id="results">
       <div class="section-header">
         <div class="section-kicker">Results</div>
-        <h2 class="section-title">Early signals from applied intelligence work.</h2>
+        <h2 class="section-title">Early patterns from automation work.</h2>
         <p class="section-subtext">
-          As HJC builds more systems, this page becomes your library of before/after stories.
-          For now, use example outcomes and replace them with specific projects later.
+          As real projects ship, you can replace these with specific before/after stories.
         </p>
       </div>
 
       <div class="testimonial-grid">
         <article class="testimonial-card">
           <p class="testimonial-quote">
-            “Once the follow-up workflow was live, we stopped losing track of leads. Every
-            form submission got a response and a reminder without us juggling spreadsheets.”
+            “After HJC set up the follow-up flow, every form submission got a response. We
+            didn’t have to babysit a spreadsheet anymore.”
           </p>
-          <p class="testimonial-author">Example result – lead handling workflow</p>
+          <p class="testimonial-author">Example – lead handling workflow</p>
         </article>
 
         <article class="testimonial-card">
           <p class="testimonial-quote">
-            “The daily summary made a bigger difference than I expected. I glance at one
-            message each afternoon instead of digging through inboxes just to know what
-            happened.”
+            “The daily summary email made it easier to see what actually moved. I check one
+            short message instead of digging through the inbox.”
           </p>
-          <p class="testimonial-author">Example result – operations digest</p>
+          <p class="testimonial-author">Example – operations digest</p>
         </article>
       </div>
     </section>
@@ -1474,10 +1547,10 @@
     <section id="contact">
       <div class="section-header">
         <div class="section-kicker">Contact</div>
-        <h2 class="section-title">Tell HJC what you’d like to simplify.</h2>
+        <h2 class="section-title">Tell HJC where your day gets stuck.</h2>
         <p class="section-subtext">
-          Share a few details about your work and how you spend your time. HJC will review it,
-          then respond with ideas for what to automate first.
+          Share a few details about your work and where you lose the most time. HJC will
+          respond with ideas for a first, focused automation.
         </p>
       </div>
 
@@ -1511,18 +1584,18 @@
               <label for="interest">What are you most interested in?</label>
               <select id="interest" class="form-select">
                 <option>Mapping my workflows</option>
-                <option>Launching 1‑3 automations</option>
+                <option>Launching 1–3 automations</option>
                 <option>AI help for writing & summaries</option>
                 <option>Ongoing systems care</option>
                 <option>Not sure yet – want a recommendation</option>
               </select>
             </div>
             <div class="form-field">
-              <label for="message">What does your current day look like?</label>
+              <label for="message">Where do things slow down?</label>
               <textarea
                 id="message"
                 class="form-textarea"
-                placeholder="You can describe your tools, repeated tasks, and where you feel the most friction..."
+                placeholder="A few lines about your tools, repeated tasks, and where work piles up..."
               ></textarea>
             </div>
             <div>
@@ -1533,20 +1606,20 @@
             </div>
           </form>
           <div class="contact-highlight">
-            The form sends your message directly from this site. You’ll receive a reply at the
-            email address you provide—no need to open a separate mail app.
+            The form sends your note directly from this site. You’ll get a reply at the email
+            address you provide.
           </div>
         </div>
 
         <div class="contact-image">
           <div class="contact-image-text">
-            <div class="hero-image-tag">What you can show here later</div>
+            <div class="hero-image-tag">What this space becomes later</div>
             <div style="font-size:13px;color:var(--accent-primary);margin-bottom:4px;">
-              Over time, this space can hold real screenshots of HJC dashboards and flows.
+              Over time, this can show real screenshots of dashboards and flows.
             </div>
             <div>
-              For now, it’s a reminder that the goal is visibility: you know what’s automated,
-              what’s manual, and how everything connects.
+              For now, it’s a reminder that the goal is simple visibility: you can see what’s
+              automated, what’s manual, and what to improve next.
             </div>
           </div>
           <div class="hero-image-graphic" aria-hidden="true"></div>
@@ -1562,7 +1635,7 @@
       <div class="footer-links">
         <a href="#about">About</a>
         <a href="#services">Services</a>
-        <a href="#use-cases">Use cases</a>
+        <a href="#how-it-works">How it works</a>
         <a href="#pricing">Pricing</a>
         <a href="#contact">Contact</a>
       </div>
@@ -1570,55 +1643,55 @@
   </footer>
 
   <script>
-  // Set year
-  document.getElementById("year").textContent = new Date().getFullYear();
+    // Set year
+    document.getElementById("year").textContent = new Date().getFullYear();
 
-  // Contact form -> sends to Formspree (or your chosen email form service)
-  document.getElementById("contact-form").addEventListener("submit", async function (e) {
-    e.preventDefault();
+    // Contact form -> send to your form backend (e.g., Formspree)
+    document.getElementById("contact-form").addEventListener("submit", async function (e) {
+      e.preventDefault();
 
-    const status = document.getElementById("form-status");
-    status.textContent = "";
-    status.className = "form-message";
+      const status = document.getElementById("form-status");
+      status.textContent = "";
+      status.className = "form-message";
 
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const business = document.getElementById("business").value.trim();
-    const interest = document.getElementById("interest").value;
-    const message = document.getElementById("message").value.trim();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const business = document.getElementById("business").value.trim();
+      const interest = document.getElementById("interest").value;
+      const message = document.getElementById("message").value.trim();
 
-    // Build the payload that will be emailed to you
-    const payload = {
-      name,
-      email,
-      business,
-      interest,
-      message
-    };
+      const payload = {
+        name,
+        email,
+        business,
+        interest,
+        message
+      };
 
-    try {
-      const response = await fetch("https://formspree.io/f/xrbwnzvj", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Accept": "application/json"
-        },
-        body: JSON.stringify(payload)
-      });
+      try {
+        // TODO: replace with your real Formspree endpoint
+        const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify(payload)
+        });
 
-      if (response.ok) {
-        status.textContent = "Thanks for reaching out. HJC will review your note and reply to you by email.";
-        status.classList.add("success");
-        document.getElementById("contact-form").reset();
-      } else {
-        throw new Error("Request failed");
+        if (response.ok) {
+          status.textContent = "Thanks for reaching out. HJC will review your note and reply by email.";
+          status.classList.add("success");
+          document.getElementById("contact-form").reset();
+        } else {
+          throw new Error("Request failed");
+        }
+      } catch (err) {
+        console.error(err);
+        status.textContent = "Something went wrong sending your message. Please try again in a moment.";
+        status.classList.add("error");
       }
-    } catch (err) {
-      console.error(err);
-      status.textContent = "Something went wrong sending your message. Please try again in a moment.";
-      status.classList.add("error");
-    }
-  });
+    });
   </script>
 </body>
 </html>
